@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Item = ({ value }) => {
   return (
     <div>
@@ -14,6 +16,10 @@ const Item = ({ value }) => {
       </figure>
     </div>
   );
+};
+
+Item.propTypes = {
+  value: PropTypes.string,
 };
 
 export default Item;

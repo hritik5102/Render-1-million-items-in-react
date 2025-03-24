@@ -1,4 +1,5 @@
 import Item from "./item";
+import PropTypes from "prop-types";
 
 const Items = ({ items }) => {
   return (
@@ -8,6 +9,15 @@ const Items = ({ items }) => {
       ))}
     </>
   );
+};
+
+Items.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      value: PropTypes.string,
+    })
+  ),
 };
 
 export default Items;
