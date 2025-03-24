@@ -8,7 +8,7 @@ const array = Array.from({ length: 100 }, (_, index) => ({
 }));
 
 function App() {
-  const [items, setList] = useState(array);
+  const [items, setItems] = useState(array);
 
   const addItem = () => {
     const totalItems = items.length;
@@ -18,7 +18,7 @@ function App() {
       value: `Item ${totalItems + 1}`,
     };
 
-    setList((prevItems) => [...prevItems, newItem]);
+    setItems((prevItems) => [...prevItems, newItem]);
   };
 
   return (
