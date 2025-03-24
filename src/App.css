@@ -1,0 +1,44 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  padding: 1em 0;
+  text-align: center;
+}
+
+p {
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+
+.addItem {
+  position: fixed;
+  top: 2em;
+  left: 1em;
+}
+
+figure {
+  padding: 8px;
+  border: 1px solid white;
+  margin-bottom: 32px;
+  width: min-content;
+}
+
+figure img {
+  margin-bottom: 8px;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+}
