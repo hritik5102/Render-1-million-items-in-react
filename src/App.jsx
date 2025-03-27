@@ -1,7 +1,7 @@
-import "./App.css";
-import Items from "./components/items";
+import "@/App.css";
+import Items from "components/items";
 import { useState } from "react";
-import AddItemButton from "./components/addItemButton";
+import AddItemButton from "components/addItemButton";
 
 const array = Array.from({ length: 100 }, (_, index) => ({
   id: index + 1,

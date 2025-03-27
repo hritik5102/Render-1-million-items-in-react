@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    // "target": "es6", // Use modern JavaScript (ES6+)
+    "baseUrl": "./src", // Base directory for imports
+    "paths": {
+      "@/*": ["./src"], // Example: "@/components" → "src/components"
+      "components/*": ["./src/components/*"]
+    },
+    "jsx": "react-jsx", // Enable JSX support (for React),
+    "strict": false // Disable strict type-checking (if not using TypeScript)
+  },
+  "exclude": ["node_modules"] // Ignore these folders
+}
