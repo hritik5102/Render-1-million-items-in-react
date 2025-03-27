@@ -1,6 +1,7 @@
 import "./App.css";
 import Items from "./components/items";
 import { useState } from "react";
+import AddItemButton from "./components/addItemButton";
 
 const array = Array.from({ length: 100 }, (_, index) => ({
   id: index + 1,
@@ -24,9 +25,7 @@ function App() {
   return (
     <>
       <h1>Render 1 million items in react 🪐</h1>
-      <button className="addItem" onClick={addItem}>
-        Add new item 🧸
-      </button>
+      <AddItemButton addItem={addItem} />
       <section>
         <Items items={items} />
       </section>
